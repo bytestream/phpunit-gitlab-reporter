@@ -54,6 +54,9 @@ class Reporter extends Printer implements TestListener
     /** @var TestcaseAType */
     private $testCase;
 
+    /** @var int */
+    private $suiteTests;
+
     /**
      * Constructor.
      *
@@ -130,6 +133,7 @@ class Reporter extends Printer implements TestListener
         }
 
         $this->suiteTime = 0.0;
+        $this->suiteTests = 0;
         $this->suiteErrors = 0;
         $this->suiteFailures = 0;
         $this->suiteSkipped = 0;
@@ -145,7 +149,7 @@ class Reporter extends Printer implements TestListener
             return;
         }
 
-        $this->suite->setTests(count($suite->tests()));
+        $this->suite->setTests($this->suiteTests);
         $this->suite->setErrors($this->suiteErrors);
         $this->suite->setFailures($this->suiteFailures);
         $this->suite->setSkipped($this->suiteSkipped);
@@ -157,6 +161,8 @@ class Reporter extends Printer implements TestListener
 
     public function startTest(Test $test): void
     {
+        $this->suiteTests++;
+
         $this->testCase = new TestcaseAType;
         $this->testCase->setName($test->getName());
         $this->testCase->setClassname($this->getClassname($test)->getName());
