@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="foo" tests="1" time="96.378" id="123">
+    <testcase name="testGlobalCreateInstanceOf" classname="Tests\Database\Core\Mailer\ConfigSmtpServiceTest" time="0.13412"/>
+  </testsuite>
+  <testsuite name="foo" tests="1" time="96.378" id="123">
+    <testcase name="testGlobalCreateInstanceOf" classname="Tests\Database\Core\Mailer\ConfigSmtpServiceTest" time="0.13412"/>
+  </testsuite>
+  <testsuite name="foo" tests="1" time="96.378" id="123">
+    <testcase name="testGlobalCreateInstanceOf" classname="Tests\Database\Core\Mailer\ConfigSmtpServiceTest" time="0.13412"/>
+  </testsuite>
+</testsuites>

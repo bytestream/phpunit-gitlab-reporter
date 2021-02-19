@@ -1,0 +1,9 @@
+xsd2php:
+  namespaces:
+    '': 'SupportPal\PHPUnitGitLabReporter\Schema'
+
+  destinations_php:
+    'SupportPal\PHPUnitGitLabReporter\Schema': src/Schema
+
+  destinations_jms:
+    'SupportPal\PHPUnitGitLabReporter\Schema': resources/metadata

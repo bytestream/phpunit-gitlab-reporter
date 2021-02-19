@@ -1,0 +1,113 @@
+SupportPal\PHPUnitGitLabReporter\Schema\TestsuiteType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        timestamp:
+            expose: true
+            access_type: public_method
+            serialized_name: timestamp
+            accessor:
+                getter: getTimestamp
+                setter: setTimestamp
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        hostname:
+            expose: true
+            access_type: public_method
+            serialized_name: hostname
+            accessor:
+                getter: getHostname
+                setter: setHostname
+            xml_attribute: true
+            type: string
+        tests:
+            expose: true
+            access_type: public_method
+            serialized_name: tests
+            accessor:
+                getter: getTests
+                setter: setTests
+            xml_attribute: true
+            type: int
+        failures:
+            expose: true
+            access_type: public_method
+            serialized_name: failures
+            accessor:
+                getter: getFailures
+                setter: setFailures
+            xml_attribute: true
+            type: int
+        errors:
+            expose: true
+            access_type: public_method
+            serialized_name: errors
+            accessor:
+                getter: getErrors
+                setter: setErrors
+            xml_attribute: true
+            type: int
+        skipped:
+            expose: true
+            access_type: public_method
+            serialized_name: skipped
+            accessor:
+                getter: getSkipped
+                setter: setSkipped
+            xml_attribute: true
+            type: int
+        time:
+            expose: true
+            access_type: public_method
+            serialized_name: time
+            accessor:
+                getter: getTime
+                setter: setTime
+            xml_attribute: true
+            type: float
+        properties:
+            expose: true
+            access_type: public_method
+            serialized_name: properties
+            accessor:
+                getter: getProperties
+                setter: setProperties
+            type: array<SupportPal\PHPUnitGitLabReporter\Schema\TestsuiteType\PropertiesAType\PropertyAType>
+            xml_list:
+                inline: false
+                entry_name: property
+                skip_when_empty: false
+        testcase:
+            expose: true
+            access_type: public_method
+            serialized_name: testcase
+            accessor:
+                getter: getTestcase
+                setter: setTestcase
+            xml_list:
+                inline: true
+                entry_name: testcase
+            type: array<SupportPal\PHPUnitGitLabReporter\Schema\TestsuiteType\TestcaseAType>
+        systemOut:
+            expose: true
+            access_type: public_method
+            serialized_name: system-out
+            accessor:
+                getter: getSystemOut
+                setter: setSystemOut
+            type: string
+        systemErr:
+            expose: true
+            access_type: public_method
+            serialized_name: system-err
+            accessor:
+                getter: getSystemErr
+                setter: setSystemErr
+            type: string

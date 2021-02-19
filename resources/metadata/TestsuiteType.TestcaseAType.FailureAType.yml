@@ -1,0 +1,28 @@
+SupportPal\PHPUnitGitLabReporter\Schema\TestsuiteType\TestcaseAType\FailureAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+        message:
+            expose: true
+            access_type: public_method
+            serialized_name: message
+            accessor:
+                getter: getMessage
+                setter: setMessage
+            xml_attribute: true
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: type
+            accessor:
+                getter: getType
+                setter: setType
+            xml_attribute: true
+            type: string

@@ -1,0 +1,20 @@
+SupportPal\PHPUnitGitLabReporter\Schema\Testsuites\TestsuitesAType\TestsuiteAType:
+    properties:
+        package:
+            expose: true
+            access_type: public_method
+            serialized_name: package
+            accessor:
+                getter: getPackage
+                setter: setPackage
+            xml_attribute: true
+            type: string
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: int

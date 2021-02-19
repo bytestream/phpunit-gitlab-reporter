@@ -1,0 +1,53 @@
+SupportPal\PHPUnitGitLabReporter\Schema\TestsuiteType\TestcaseAType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: name
+            accessor:
+                getter: getName
+                setter: setName
+            xml_attribute: true
+            type: string
+        classname:
+            expose: true
+            access_type: public_method
+            serialized_name: classname
+            accessor:
+                getter: getClassname
+                setter: setClassname
+            xml_attribute: true
+            type: string
+        time:
+            expose: true
+            access_type: public_method
+            serialized_name: time
+            accessor:
+                getter: getTime
+                setter: setTime
+            xml_attribute: true
+            type: float
+        skipped:
+            expose: true
+            access_type: public_method
+            serialized_name: skipped
+            accessor:
+                getter: getSkipped
+                setter: setSkipped
+            type: \AnyType
+        error:
+            expose: true
+            access_type: public_method
+            serialized_name: error
+            accessor:
+                getter: getError
+                setter: setError
+            type: SupportPal\PHPUnitGitLabReporter\Schema\TestsuiteType\TestcaseAType\ErrorAType
+        failure:
+            expose: true
+            access_type: public_method
+            serialized_name: failure
+            accessor:
+                getter: getFailure
+                setter: setFailure
+            type: SupportPal\PHPUnitGitLabReporter\Schema\TestsuiteType\TestcaseAType\FailureAType

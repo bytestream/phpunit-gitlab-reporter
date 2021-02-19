@@ -1,0 +1,13 @@
+SupportPal\PHPUnitGitLabReporter\Schema\Testsuites\TestsuitesAType:
+    properties:
+        testsuite:
+            expose: true
+            access_type: public_method
+            serialized_name: testsuite
+            accessor:
+                getter: getTestsuite
+                setter: setTestsuite
+            xml_list:
+                inline: true
+                entry_name: testsuite
+            type: array<SupportPal\PHPUnitGitLabReporter\Schema\Testsuites\TestsuitesAType\TestsuiteAType>
